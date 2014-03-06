@@ -46,7 +46,7 @@ module Sorted
           options      = args[1] || {}
           html_options = args[2] || {}
         else
-          block        = proc { args[0].to_s }
+          block        = proc { I18n.t("sorted.#{args[0].to_s}") }
           order        = args[1]
           options      = args[2] || {}
           html_options = args[3] || {}
